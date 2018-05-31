@@ -1,0 +1,4 @@
+#!/bin/bash
+# find the IP of a computer connected on one interface
+
+ifconfig | grep 'broadcast' | awk '/inet/ {print $2}'

@@ -1,0 +1,18 @@
+#!/bin/bash
+# open
+# mimic the 'open' command from macOS
+
+dirToOpen="$1"
+
+if [ -z "$dirToOpen" ] ; then
+	echo "No directory passed in as param 1"
+	exit
+else
+	# if a directory is passed in, treat it macOS style	
+	if [ "$dirToOpen" == "." ] ; then
+		dirToOpen="$(pwd)"
+		    xdg-open "$dirToOpen"
+	else
+		xdg-open "$dirToOpen"
+	fi
+fi
