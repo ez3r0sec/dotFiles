@@ -11,5 +11,5 @@ if [ -z "$1" ] || [ -z "$2" ] ; then
 	exit
 else
 	echo "Compiling $2 as $1"	
-	mkbundle -o "$1" "$2" --deps --cross default
+	mkbundle -o "$binaryName" "$executableFile" --deps --cross default
 fi
