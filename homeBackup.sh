@@ -3,10 +3,10 @@
 
 currentUser="$(id -un)"
 srcBase="/home/$(id -un)"
-dest="/run/media/$(id -un)/$1"
+dest="$1"
 
 if [ -z "$1" ] ; then
-	echo "Pass in the destination directory (from root of mounted volume, ie. /EXTHD/backups/mybackupdir) as param 1"
+	echo "Pass in the destination directory as param 1"
 	exit
 else
 	ls -1 "$srcBase" >> "/tmp/backupDirs.txt"
