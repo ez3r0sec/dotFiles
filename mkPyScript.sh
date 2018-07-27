@@ -13,7 +13,7 @@ fi
 echo "#!/usr/bin/python" > "$1"
 echo "# $1" >> "$1"
 echo "# " >> "$1"
-echo "$ Last Edited: $(date +%m/%d/%y)" >> "$1"
+echo "# Last Edited: $(date +%m/%d/%y)" >> "$1"
 echo >> "$1"
 echo "### IMPORTS" >> "$1"
 echo >> "$1"
