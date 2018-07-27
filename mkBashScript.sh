@@ -13,7 +13,7 @@ fi
 echo "#!/bin/bash" > "$1"
 echo "# $1" >> "$1"
 echo "# " >> "$1"
-echo "$ Last Edited: $(date +%m/%d/%y)" >> "$1"
+echo "# Last Edited: $(date +%m/%d/%y)" >> "$1"
 echo >> "$1"
 echo "### VARIABLES" >> "$1"
 echo >> "$1"
