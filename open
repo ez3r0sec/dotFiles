@@ -1,6 +1,6 @@
 #!/bin/bash
 # open
-# mimic the 'open' command from macOS
+# mimic the 'open' command from macOS for Linux
 
 dirToOpen="$1"
 
