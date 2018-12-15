@@ -1,6 +1,6 @@
 #!/bin/bash
 # requires wget
-# Last Edited: 12/15/18 Julian Thies
+# Last Edited: 12/15/18
 
 URL="$1"
 
